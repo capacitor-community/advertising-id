@@ -1,0 +1,6 @@
+[
+	{
+		"pkg": "@capacitor-community/advertising-id",
+		"classpath": "com.thomasvidas.advertising.AdvertisingIdPlugin"
+	}
+]
