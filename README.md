@@ -9,6 +9,12 @@ npm install @capacitor-community/advertising-id
 npx cap sync
 ```
 
+## iOS
+
+iOS requires the following usage description be added and filled out for your app in `Info.plist` to use the `requestTracking()` method:
+
+- `NSUserTrackingUsageDescription` (`Privacy - Tracking Usage Description`)
+
 ## API
 
 <docgen-index>
