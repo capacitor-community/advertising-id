@@ -22,6 +22,7 @@ iOS requires the following usage description be added and filled out for your ap
 * [`requestTracking()`](#requesttracking)
 * [`getAdvertisingId()`](#getadvertisingid)
 * [`getAdvertisingStatus()`](#getadvertisingstatus)
+* [Type Aliases](#type-aliases)
 
 </docgen-index>
 
@@ -31,10 +32,10 @@ iOS requires the following usage description be added and filled out for your ap
 ### requestTracking()
 
 ```typescript
-requestTracking() => Promise<{ value: string; }>
+requestTracking() => Promise<{ value: AdvertisingStatus; }>
 ```
 
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ value: <a href="#advertisingstatus">AdvertisingStatus</a>; }&gt;</code>
 
 --------------------
 
@@ -42,10 +43,10 @@ requestTracking() => Promise<{ value: string; }>
 ### getAdvertisingId()
 
 ```typescript
-getAdvertisingId() => Promise<{ id: string; status: string; }>
+getAdvertisingId() => Promise<{ id: string; status: AdvertisingStatus; }>
 ```
 
-**Returns:** <code>Promise&lt;{ id: string; status: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ id: string; status: <a href="#advertisingstatus">AdvertisingStatus</a>; }&gt;</code>
 
 --------------------
 
@@ -53,11 +54,19 @@ getAdvertisingId() => Promise<{ id: string; status: string; }>
 ### getAdvertisingStatus()
 
 ```typescript
-getAdvertisingStatus() => Promise<{ status: string; }>
+getAdvertisingStatus() => Promise<{ status: AdvertisingStatus; }>
 ```
 
-**Returns:** <code>Promise&lt;{ status: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ status: <a href="#advertisingstatus">AdvertisingStatus</a>; }&gt;</code>
 
 --------------------
+
+
+### Type Aliases
+
+
+#### AdvertisingStatus
+
+<code>'Authorized' | 'Denied' | 'Not Determined' | 'Restricted'</code>
 
 </docgen-api>
