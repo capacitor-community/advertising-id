@@ -4,7 +4,6 @@ import android.content.Context;
 import com.google.android.gms.ads.identifier.AdvertisingIdClient;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
-
 import java.io.IOException;
 
 public class AdvertisingId {
@@ -27,7 +26,8 @@ public class AdvertisingId {
         }
     }
 
-    private AdvertisingIdClient.Info getAdvertisingIdInfo(Context context) throws GooglePlayServicesNotAvailableException, IOException, GooglePlayServicesRepairableException {
+    private AdvertisingIdClient.Info getAdvertisingIdInfo(Context context)
+        throws GooglePlayServicesNotAvailableException, IOException, GooglePlayServicesRepairableException {
         return AdvertisingIdClient.getAdvertisingIdInfo(context);
     }
 
@@ -43,9 +43,7 @@ public class AdvertisingId {
     public String getTrackingStatus(Context context) {
         try {
             AdvertisingIdClient.Info info = getAdvertisingIdInfo(context);
-            return info.isLimitAdTrackingEnabled() ?
-                    TrackingStatus.Denied.toString() :
-                    TrackingStatus.Authorized.toString();
+            return info.isLimitAdTrackingEnabled() ? TrackingStatus.Denied.toString() : TrackingStatus.Authorized.toString();
         } catch (GooglePlayServicesNotAvailableException | GooglePlayServicesRepairableException e) {
             return TrackingStatus.Restricted.toString();
         } catch (IOException e) {

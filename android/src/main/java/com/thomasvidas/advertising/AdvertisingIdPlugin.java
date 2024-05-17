@@ -1,7 +1,6 @@
 package com.thomasvidas.advertising;
 
 import android.content.Context;
-
 import com.getcapacitor.JSObject;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
