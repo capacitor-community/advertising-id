@@ -8,13 +8,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@capacitor/android": "^3.5.0",
-    "@capacitor/core": "^3.5.0",
-    "@capacitor/ios": "^3.5.0",
-    "@capacitor-community/advertising-id": "file:.."
+    "@capacitor-community/advertising-id": "file:..",
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/ios": "^6.0.0"
   },
   "devDependencies": {
-    "@capacitor/cli": "^3.5.0",
+    "@capacitor/cli": "^6.0.0",
     "typescript": "^4.6.3",
     "vite": "^2.9.5"
   }
