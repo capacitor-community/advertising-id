@@ -10,7 +10,7 @@ public class AdvertisingIdPlugin: CAPPlugin {
             call.resolve([ "value": status.name() ])
         }
     }
-    
+
     @objc func getAdvertisingId(_ call: CAPPluginCall) {
         let id = implementation.getAdvertisingId()
         let status = implementation.getAdvertisingStatus()
@@ -19,7 +19,7 @@ public class AdvertisingIdPlugin: CAPPlugin {
             "status": status.name()
         ])
     }
-    
+
     @objc func getAdvertisingStatus(_ call: CAPPluginCall) {
         let status = implementation.getAdvertisingStatus()
         call.resolve([
