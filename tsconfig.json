@@ -2,8 +2,8 @@
   "compilerOptions": {
     "allowUnreachableCode": false,
     "declaration": true,
-    "inlineSources": true,
     "esModuleInterop": true,
+    "inlineSources": true,
     "lib": ["dom", "es2017"],
     "module": "esnext",
     "moduleResolution": "node",
