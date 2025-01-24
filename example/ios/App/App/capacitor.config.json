@@ -1,9 +1,0 @@
-{
-	"appId": "com.example.app",
-	"appName": "Ad Id Example",
-	"webDir": "dist",
-	"packageClassList": [
-		"AdvertisingIdPlugin",
-		"AdvertisingIdPlugin"
-	]
-}
