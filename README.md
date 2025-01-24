@@ -15,6 +15,14 @@ iOS requires the following usage description be added and filled out for your ap
 
 - `NSUserTrackingUsageDescription` (`Privacy - Tracking Usage Description`)
 
+## Android
+
+### Variables
+
+This plugin will use the following project variables (defined in your app's `variables.gradle` file):
+
+- `playServicesAdsId` version of `com.google.android.gms:play-services-ads-identifier` (default: `18.2.0`)
+
 ## API
 
 <docgen-index>
