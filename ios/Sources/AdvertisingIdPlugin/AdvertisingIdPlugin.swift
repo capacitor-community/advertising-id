@@ -1,10 +1,6 @@
 import Foundation
 import Capacitor
 
-/**
- * Please read the Capacitor iOS Plugin Development Guide
- * here: https://capacitorjs.com/docs/plugins/ios
- */
 @objc(AdvertisingIdPlugin)
 public class AdvertisingIdPlugin: CAPPlugin, CAPBridgedPlugin {
     public let identifier = "AdvertisingIdPlugin"
