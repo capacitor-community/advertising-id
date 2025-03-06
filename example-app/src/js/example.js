@@ -1,10 +1,5 @@
 import { AdvertisingId } from '@capacitor-community/advertising-id';
 
-window.testEcho = () => {
-    const inputValue = document.getElementById("echoInput").value;
-    AdvertisingId.echo({ value: inputValue })
-}
-
 const adId = document.getElementById('txt-ad-id');
 const adStatus = document.getElementById('txt-ad-status');
 const btnPrompt = document.getElementById('btn-prompt-ad-tracking');
